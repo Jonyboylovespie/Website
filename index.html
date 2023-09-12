@@ -4,20 +4,20 @@
   </head>
   <body>
     <header>
-      <h1 class="center">Login</h1>
+      <h1 id="LoginOrSignup" class="center">Login</h1>
     </header>
       <form>
         <label for="fname">Username:</label><br>
         <input type="text" id="Username" name="fname"><br>
         <label for="lname">Password:</label><br>
         <input type="text" id="Password" name="lname">
-        <button onclick="Login()">Login</button>
+        <button id="Button" onclick="Login()">Login</button>
     </form>
     <header>
-      <h1 class="center">Don't Have an Account?</h1>
+      <h1 id="NoAccount" class="center">Don't Have an Account?</h1>
     </header>
     <form>
-        <button onclick="Signup()">Signup</button>
+        <button id="SignupButton" onclick="Signup()">Signup</button>
     </form>
   </body>
 </html>
@@ -29,6 +29,9 @@
     console.log("Your username is " + Username + " and your password is " + Password);
   }
     function Signup() {
-    
+    document.getElementById("LoginOrSignup").value = "Signup";
+    document.getElementById("Button").value = "Signup";
+    document.getElementById("SignupButton").style.visibility = "hidden";
+    document.getElementById("NoAccount").style.visibility = "hidden";
   }
 </script>
