@@ -11,7 +11,7 @@
         <input type="text" id="Username" name="fname"><br>
         <label for="lname">Password:</label><br>
         <input type="text" id="Password" name="lname">
-        <button type="button" id="Button" onclick="Login()">Login</button>
+        <button type="button" id="Button" onclick="LoginButton()">Login</button>
     </form>
     <header>
       <h1 id="NoAccount" class="center">Don't Have an Account?</h1>
@@ -37,7 +37,12 @@
     document.getElementById("LoginOrSignup").innerHTML = "Signup";
     document.getElementById("Button").innerHTML = "Signup";
     document.getElementById("Button").onclick = "SignupButton()";
-    document.getElementById("SignupButton").style.visibility = "hidden";
-    document.getElementById("NoAccount").style.visibility = "hidden";
+    document.getElementById("SignupButton").innerHTML = "Login";
+    document.getElementById("SignupButton").onclick = "Login()";
+    document.getElementById("NoAccount").innerHTML = "Already Have an Account?";
+    console.log("yes");
+  }
+    function Login() {
+    console.log("yes");
   }
 </script>
