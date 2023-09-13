@@ -17,12 +17,12 @@
       <h1 id="NoAccount" class="center">Don't Have an Account?</h1>
     </header>
     <form>
-        <button type="button" id="SignupButton" onclick=Signup>Signup</button>
+        <button type="button" id="SignupButton" onclick="Signup()">Signup</button>
     </form>
   </body>
 </html>
 
-<script type="module" src="signup.js">
+<script>
   function LoginButton() {
     var Username = document.getElementById("Username").value;
     var Password = document.getElementById("Password").value;
@@ -32,8 +32,6 @@
     var Username = document.getElementById("Username").value;
     var Password = document.getElementById("Password").value;
     console.log("Your username will be " + Username + " and your password will be " + Password);
-    import { myFunction } from './signup.js';
-    myFunction();
   }
     function Signup() {
     document.getElementById("LoginOrSignup").innerHTML = "Signup";
