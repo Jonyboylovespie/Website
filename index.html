@@ -40,9 +40,13 @@
     document.getElementById("SignupButton").innerHTML = "Login";
     document.getElementById("SignupButton").onclick = Login;
     document.getElementById("NoAccount").innerHTML = "Already Have an Account?";
-    console.log("yes");
   }
     function Login() {
-    console.log("yes");
+    document.getElementById("LoginOrSignup").innerHTML = "Login";
+    document.getElementById("Button").innerHTML = "Login";
+    document.getElementById("Button").onclick = LoginButton;
+    document.getElementById("SignupButton").innerHTML = "Signup";
+    document.getElementById("SignupButton").onclick = Signup;
+    document.getElementById("NoAccount").innerHTML = "Don't Have an Account?";
   }
 </script>
