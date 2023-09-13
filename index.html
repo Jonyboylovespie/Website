@@ -23,14 +23,20 @@
 </html>
 
 <script>
-  function Login() {
+  function LoginButton() {
     var Username = document.getElementById("Username").value;
     var Password = document.getElementById("Password").value;
     console.log("Your username is " + Username + " and your password is " + Password);
   }
+    function SignupButton() {
+    var Username = document.getElementById("Username").value;
+    var Password = document.getElementById("Password").value;
+    console.log("Your username will be " + Username + " and your password will be " + Password);
+  }
     function Signup() {
     document.getElementById("LoginOrSignup").innerHTML = "Signup";
     document.getElementById("Button").innerHTML = "Signup";
+    document.getElementById("Button").onclick = "SignupButton()";
     document.getElementById("SignupButton").style.visibility = "hidden";
     document.getElementById("NoAccount").style.visibility = "hidden";
   }
