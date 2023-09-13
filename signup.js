@@ -1,1 +1,3 @@
-console.log("very cool");
+export function myFunction() {
+  console.log("very cool");
+}
